@@ -3,6 +3,9 @@
 
 require File.expand_path(File.dirname(__FILE__) + '/edgecase')
 
+# First thing, we'll learn how to assert the value of objects using an
+# automated way. We'll also learn how the koans works.
+
 class AboutAsserts < EdgeCase::Koan
 
   # We shall contemplate truth by testing reality, via asserts.
@@ -19,7 +22,7 @@ class AboutAsserts < EdgeCase::Koan
   # To understand reality, we must compare our expectations against
   # reality.
   def test_assert_equality
-    expected_value = __
+    expected_value = 0
     actual_value = 1 + 1
 
     assert expected_value == actual_value
@@ -27,7 +30,7 @@ class AboutAsserts < EdgeCase::Koan
 
   # Some ways of asserting equality are better than others.
   def test_a_better_way_of_asserting_equality
-    expected_value = __
+    expected_value = 0
     actual_value = 1 + 1
 
     assert_equal expected_value, actual_value

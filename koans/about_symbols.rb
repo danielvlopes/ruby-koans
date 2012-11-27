@@ -23,25 +23,6 @@ class AboutSymbols < EdgeCase::Koan
     assert_equal __, symbol1.object_id == symbol2.object_id
   end
 
-  def test_method_names_become_symbols
-    symbols_as_strings = Symbol.all_symbols.map { |x| x.to_s }
-    assert_equal __, symbols_as_strings.include?("test_method_names_become_symbols")
-  end
-
-  # THINK ABOUT IT:
-  #
-  # Why do we convert the list of symbols to strings and then compare
-  # against the string value rather than against symbols?
-
-  in_ruby_version("mri") do
-    RubyConstant = "What is the sound of one hand clapping?"
-    def test_constants_become_symbols
-      all_symbols = Symbol.all_symbols
-
-      assert_equal __, all_symbols.include?(__)
-    end
-  end
-
   def test_symbols_can_be_made_from_strings
     string = "catsAndDogs"
     assert_equal __, string.to_sym
@@ -94,7 +75,4 @@ class AboutSymbols < EdgeCase::Koan
     assert_equal __, ("cats" + "dogs").to_sym
   end
 
-  # THINK ABOUT IT:
-  #
-  # Why is it not a good idea to dynamically create a lot of symbols?
 end

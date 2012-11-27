@@ -84,23 +84,6 @@ class AboutMessagePassing < EdgeCase::Koan
       typical.method_missing(:foobar)
     end
     assert_match(/foobar/, exception.message) # __
-
-    # THINK ABOUT IT:
-    #
-    # If the method :method_missing causes the NoMethodError, then
-    # what would happen if we redefine method_missing?
-    #
-    # NOTE:
-    #
-    # In Ruby 1.8 the method_missing method is public and can be
-    # called as shown above.  However, in Ruby 1.9 the method_missing
-    # method is private.  We explicitly made it public in the testing
-    # framework so this example works in both versions of Ruby.  Just
-    # keep in mind you can't call method_missing like that in Ruby
-    # 1.9. normally.
-    #
-    # Thanks.  We now return you to your regularly scheduled Ruby
-    # Koans.
   end
 
   # ------------------------------------------------------------------

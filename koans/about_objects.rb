@@ -41,9 +41,6 @@ class AboutObjects < EdgeCase::Koan
     assert_equal __, 1.object_id
     assert_equal __, 2.object_id
     assert_equal __, 100.object_id
-
-    # THINK ABOUT IT:
-    # What pattern do the object IDs for small integers follow?
   end
 
   def test_clone_creates_a_different_object
