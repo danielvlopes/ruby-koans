@@ -158,7 +158,6 @@ class AboutClassMethods < EdgeCase::Koan
   #   end
   #
   # Which do you prefer and why?
-  # Are there times you might prefer one over the other?
 
   # ------------------------------------------------------------------
 
