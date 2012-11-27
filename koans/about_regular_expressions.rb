@@ -29,19 +29,7 @@ class AboutRegularExpressions < EdgeCase::Koan
     assert_equal __, "abbcccddddeeeee"[/ab*/]
     assert_equal __, "abbcccddddeeeee"[/az*/]
     assert_equal __, "abbcccddddeeeee"[/z*/]
-
-    # THINK ABOUT IT:
-    #
-    # When would * fail to match?
   end
-
-  # THINK ABOUT IT:
-  #
-  # We say that the repetition operators above are "greedy."
-  #
-  # Why?
-
-  # ------------------------------------------------------------------
 
   def test_the_left_most_match_wins
     assert_equal __, "abbccc az"[/az*/]

@@ -32,11 +32,6 @@ class AboutClasses < EdgeCase::Koan
     assert_raise(___) do
       fido.name
     end
-
-    assert_raise(___) do
-      eval "fido.@name"
-      # NOTE: Using eval because the above line is a syntax error.
-    end
   end
 
   def test_you_can_politely_ask_for_instance_variable_values

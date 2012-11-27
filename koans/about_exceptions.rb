@@ -57,7 +57,6 @@ class AboutExceptions < EdgeCase::Koan
     assert_equal __, result
   end
 
-  # Sometimes, we must know about the unknown
   def test_asserting_an_error_is_raised
     # A do-end is a block, a topic to explore more later
     assert_raise(___) do

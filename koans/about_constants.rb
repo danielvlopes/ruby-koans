@@ -66,11 +66,6 @@ class AboutConstants < EdgeCase::Koan
     assert_equal __, MyAnimals::Bird.new.legs_in_bird
   end
 
-  # QUESTION: Which has precedence: The constant in the lexical scope,
-  # or the constant from the inheritance hierarchy?
-
-  # ------------------------------------------------------------------
-
   class MyAnimals::Oyster < Animal
     def legs_in_oyster
       LEGS
@@ -81,7 +76,4 @@ class AboutConstants < EdgeCase::Koan
     assert_equal __, MyAnimals::Oyster.new.legs_in_oyster
   end
 
-  # QUESTION: Now which has precedence: The constant in the lexical
-  # scope, or the constant from the inheritance hierarchy?  Why is it
-  # different than the previous answer?
 end
